@@ -7,6 +7,9 @@ body {
     display: flex;
     justify-content: center; 
     padding: 2rem;
+    /* notebook like background */
+    background-image: radial-gradient(rgba(45, 45, 45, 0.15) 1px, transparent 1px);
+    background-size: 25px 25px;
 }
 
 /* Wobbly border trick for the main card */
@@ -38,4 +41,14 @@ body {
 .sketch-button:hover {
     transform: rotate(1deg)
 scale(1.05);    
+}
+
+.sketch-line {
+    border: 0;
+    height: 3px;
+    background: #2D2D2D;
+    width: 60%;
+    margin: 3rem auto;
+    border-radius: 50%;
+    transform: rotate(-1deg);
 }
