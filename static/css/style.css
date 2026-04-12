@@ -43,12 +43,33 @@ body {
 scale(1.05);    
 }
 
-.sketch-line {
-    border: 0;
-    height: 3px;
-    background: #2D2D2D;
-    width: 60%;
-    margin: 3rem auto;
+.margin-note {
+    font-family: 'Caveat', cursive;
+    color: #2D2D2D;
+    opacity: 0.5;
+    font-size: 1.2rem;
+    transform: rotate(4deg);
+    text-align: left;
+}
+
+.color-blob {
+    position: fixed;
+    width: 40vw;
+    height: 40vw;
     border-radius: 50%;
-    transform: rotate(-1deg);
+    filter: blur(100px);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.blob-left {
+    top: -10%;
+    left: -10%;
+    background-color: #f3ce7f ;
+}
+
+.blob-right {
+    bottom: -10%;
+    right: -10%;
+    background-color: #dcb55f;
 }
