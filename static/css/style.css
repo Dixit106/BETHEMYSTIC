@@ -1,0 +1,10 @@
+/* To have smooth, paper-like background and kinda carcoal text */
+body {
+    background-color: #F9F8F6;
+    color: #2D2D2D; 
+    font-family: 'Caveat', cursive;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center; 
+    padding: 2rem;
+}
