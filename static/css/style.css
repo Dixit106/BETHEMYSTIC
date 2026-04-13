@@ -121,3 +121,22 @@ scale(1.05);
 html {
     scroll-behavior: smooth;
 }
+
+a.sketch-button {
+    text-decoration:none;
+    display: inline-block;
+}
+
+.article-card{
+    max-width: 800px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.nav-btn{
+    font-size: 1.2rem;
+}

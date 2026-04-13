@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    
+    <div id="cursor-follower"></div>
+
+    <main class="container">
+        
+        <section class="sketch-card article-card">
+
+            <h2>Part 1: The Big Picture And Dreams</h2>
+
+            <p>You have roughly about 80,000 hours in your carrer. That is a massive
+                amount of time. Instead of just picking a job that pays well, 
+                what if you used that time to solve a pressing problem and be happy.
+            </p>
+
+            <p>Most advice and general idea of being happy is "follow your passion". 
+                But research shows passions change. What doest't change is the satisfaction of helping others.
+            </p>
+
+            <div class="nav-buttons">
+                <a href="{{ url_for('home') }}" class="sketch-button nav-btn">&larr; Back Home</a>
+                <a href="#" class="sketch-button nav-btn">Part 2: What to work on & rarr;</a>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
