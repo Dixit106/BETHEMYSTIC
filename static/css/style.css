@@ -129,6 +129,7 @@ a.sketch-button {
 
 .article-card{
     max-width: 800px;
+    position: relative;
 }
 
 .nav-buttons {
@@ -139,4 +140,34 @@ a.sketch-button {
 
 .nav-btn{
     font-size: 1.2rem;
+}
+
+/* Trying to make train ropes idk what am i doing*/
+
+/* left rope */
+.article-card:not(:last-of-type)::before {
+    content: "";
+    position: absolute;
+    bottom: -2.2rem;
+    left: 20%;
+    width: 6px;
+    height: 2.5rem;
+    background-color: #E2B14B;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    transform: rotate(-3deg);
+    z-index: -1;
+}
+
+/* right rope */
+.article-card:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    bottom: -2.2rem;
+    right: 20%;
+    width: 6px;
+    height: 2.5rem;
+    background-color: #E2B14B;
+    border-radius: 15px 225px 15px 255px / 255px 15px 225px 15px;
+    transform: rotate(4deg);
+    z-index: -1;
 }
