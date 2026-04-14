@@ -171,3 +171,11 @@ a.sketch-button {
     transform: rotate(4deg);
     z-index: -1;
 }
+
+.imagecontainer {
+ text-align: center;
+}
+
+#icecream {
+    width: 700px;
+}
