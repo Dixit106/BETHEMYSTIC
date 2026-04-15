@@ -11,5 +11,11 @@ def home():
 def part1():
     return render_template('part1.html')
 
+#New route for part 2
+@app.route('/part2')
+def part2():
+    return render_template('part2.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
