@@ -4,9 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Part 2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
 </head>
 <body>
-    <h1>Hello</h1>
+    
+    <div id="cursor-follower"></div>
+
+    <main class="container">
+
+        <section class="sketch-card article-card">
+            <h1>Can 1 Person make a difference?</h1>
+
+            <p>You might feel like, Why should I play by the rules when others aren’t?
+                How much can I create there is just one me and thousands of big problems,
+                and they often seem impossible to solve.</p>
+
+            <p>Yes, there are many bad people in this world but so are good. If light exist
+                shadows will too and vice-versa. So you are not alone and don’t underestimate
+                how much impact just 1 person make we will see later in article WHY?</p>
+                
+            <h4>In other words, one person can make a difference ---but you might have to do something
+                a little unconventional.</h4>
+        </section>
+
+        <section class="sketch-card article-card">
+            <h1>How Much Imapct Do Doctors Have?</h1>
+
+            <p>Doctor’s Primary purpose is to improve health, so we tried to figure out how much extra
+                “health” 1 doctor actually adds to humanity. We found, an average doctor in the UK over
+                the course of their career will enable their patients to live about an extra combined 100 years
+                of healthy life, either by extending lifespans or by improving overall health. Ofcourse, a
+                huge amount of uncertainty is there in this figure, but real figure probably won’t be more than
+                10 times higer than this.</p>
+
+            <p>If we use a standard conversion rate (used by World Bank and other institutions). 30 extra
+                years of healthy life = 1 life saved, 100 years of healthy life is equivalent to about 3 lives
+                saved. This is surely a significant impact; however, it’s less of an impact than many people
+                expect doctors to have over their entire career.</p>
+                
+                <h3>3 main reasons this impact is lower than you might expect:</h3>
+                <h4>
+                1. Researchers largely agree that medicine = increased average life expectancy by a few years
+                    only. Most gains in life expectancy = due to better nutrition, improved sanitation, increased wealth,
+                    and other factors.
+                <br>
+                <br>
+                2. Doctors are only 1 part of the medical system, which also relies on a lot of other things, we all know.
+                <br>
+                <br>
+                3. There are already a lot of doctors in the developed world, so if you don’t become a doctor, someone
+                    else will be available to  perform the most critical procedures. (Point to be noted this implyes for developed countries only)
+                </h4>
+                
+                <h3>This last point is illustrated by the chart below:</h3>
+
+
+                <div class="imagecontainer">
+            <img src="/static/images/doctors.webp" id="doctors" alt="ice cream eater">
+                </div>
+
+                <p>Here DALY = 1 year of life lost due to ill health per 100,000. We can see that the curve goes nearly flat once you have more than 150 doctors per 100,000 people. After this point (which all developed countries meet), additional doctors onl achive a small impact on average.</p>
+
+                <h4>So if you become a doctor in a rich country like the US or UK, you may well do more good than you would in many other jobs, and if you are an exceptional doctor, then you’ll have a bigger impact than these averages. But it probably won’t be a huge impact.</h4>
+        </section>
+
+    </main>
     
 </body>
 </html>
