@@ -16,6 +16,10 @@ def part1():
 def part2():
     return render_template('part2.html')
 
+#New route for part 3
+@app.route('/part3')
+def part3():
+    return render_template('part3.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
