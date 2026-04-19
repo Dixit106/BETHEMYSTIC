@@ -13,7 +13,26 @@
 </head>
 <body>
     
+     <video autoplay loop muted playsinline class="bg-video">
+        <source src="{{ url_for('static', filename='images/mysticbg.mp4') }}" type="video/mp4">
+    </video>
     <div id="cursor-follower"></div>
+
+      <header class="drip-header">
+        <nav class="navbar">
+            <div class="logo-circle">
+                <img src="{{ url_for('static', filename='images/github-logo.png') }}" alt="My logo">
+            </div>
+            <div class="webtitle">
+                <h1>BE THE <span class="highlight">MYSTIC</span></h1>
+            </div>
+            <div class="nav-links">
+                <a href="{{ url_for('part1') }}">Part 1</a>
+                <a href="{{ url_for('part2') }}">Part 2</a>
+                <a href="{{ url_for('part3') }}">Part 3</a>
+            </div>
+        </nav>
+    </header>
 
     <main class="container">
 
@@ -31,7 +50,7 @@
             <h4>In other words, one person can make a difference ---but you might have to do something
                 a little unconventional.</h4>
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h1>How Much Imapct Do Doctors Have?</h1>
 
@@ -72,7 +91,7 @@
 
                 <h4>So if you become a doctor in a rich country like the US or UK, you may well do more good than you would in many other jobs, and if you are an exceptional doctor, then you’ll have a bigger impact than these averages. But it probably won’t be a huge impact.</h4>
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h1>Some Highest-Impact People In History</h1>
 
@@ -125,7 +144,7 @@
             <img src="/static/images/petrov.webp" id="naline" alt="ice cream eater">
                 </div>
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h1>What Do These Differences In Impact Mean For Your Career?</h1>
             <p>We’ve seen some careers have had huge positive effects, and some have vastly
@@ -148,7 +167,7 @@
             <img src="/static/images/moresocial.webp" id="naline" alt="ice cream eater">
                 </div>
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h1>Why This Definition?</h1>
             <p>Everyone can have different a different defination, motive and a way to make our world
@@ -164,7 +183,7 @@
             <h4>Trying to maximize your impact doesn't give you a free pass to do bad things. The "ends justify the means" approach is wrong. You still have to be a good person, respect human rights, and use common sense. So character still matters. You shouldn’t do something unethical just
                 because it might lead to a good outcome later.</h4>
             </section>
-
+            <br>
             <div class="nav-buttons">
                 <a href="{{ url_for('home') }}" class="sketch-button nav-btn">&larr; Back Home</a>
                 <a href="{{ url_for('part3')}}" class="sketch-button nav-btn">Part 3: ABC XYZ &rarr;</a>
