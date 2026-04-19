@@ -11,12 +11,33 @@
    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+
+
+     <video autoplay loop muted playsinline class="bg-video">
+        <source src="{{ url_for('static', filename='images/mysticbg.mp4') }}" type="video/mp4">
+    </video>
     
     
     <div id="cursor-follower"></div>
 
+    <header class="drip-header">
+        <nav class="navbar">
+            <div class="logo-circle">
+                <img src="{{ url_for('static', filename='images/github-logo.png') }}" alt="My logo">
+            </div>
+            <div class="webtitle">
+                <h1>BE THE <span class="highlight">MYSTIC</span></h1>
+            </div>
+            <div class="nav-links">
+                <a href="{{ url_for('part1') }}">Part 1</a>
+                <a href="{{ url_for('part2') }}">Part 2</a>
+                <a href="{{ url_for('part3') }}">Part 3</a>
+            </div>
+        </nav>
+    </header>
+
     <main class="container">
-    
+
         
         <section class="sketch-card article-card">
 
@@ -34,7 +55,7 @@
 
            
         </section>
-
+        <br>
         <section class="sketch-card article-card">
 
             <h2>60 studies were reviewed for what makes for a dream job.Here’s what they found:</h2>
@@ -53,7 +74,7 @@
                 develop passion by doing work that you find enjoyable and meaningful.The key is to
                 get good at something that helps other people</p>    
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <p>To find a dream job, look for:
                 <br>
@@ -64,7 +85,7 @@
                 3.Supportive conditions: engaging work that makes you enter flow state, supportive colleagues,
                 lack of major negatives like unfair pay, and work that fits your personal life.</p>
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h2>Brain Is Not Your Friend(Mostly):</h2>
             <p>You can probably think of times in your life when you were excited about something,
@@ -82,7 +103,7 @@
                 This means we can’t just trust our intuitions;we need a more systematic way of working out
                 which job is best for us.</p>   
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h2>Overratted goals for a fulfilling career:</h2>
 
@@ -194,7 +215,7 @@
                 </div>
 
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h2>6 Ingredients for Dream Job:</h2>
 
@@ -289,7 +310,7 @@
             <p>So this last factor is a reminder to consider how your career fits with the rest of your life.
             </p>    
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h2>Should U Just Follow Your Passion?</h2>
 
@@ -346,7 +367,7 @@
                     
                 <h4>ALL of this means you have more options for a fulfilling career than U think.</h4>    
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h2>Do What Contributes</h2>
             <p>Our slogan for fulfilling career rather than “follow your passion would be: get good at
@@ -404,7 +425,7 @@
                     – Me    
                     </h4>
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h2>Conclusion</h2>
             <p>To have a dream job, don’t worry too much about money and stress, and don’t endlessly
@@ -416,7 +437,7 @@
 
             <h4>Keep following the guide to get answers for questions you still have in your mind.</h4>    
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h2>Applying This To Your Own Career</h2>
 
@@ -453,7 +474,7 @@
             </h4>
 
         </section>
-
+        <br>
          <div class="nav-buttons">
                 <a href="{{ url_for('home') }}" class="sketch-button nav-btn">&larr; Back Home</a>
                 <a href="{{ url_for('part2')}}" class="sketch-button nav-btn">Part 2: What to work on &rarr;</a>
