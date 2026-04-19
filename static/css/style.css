@@ -79,28 +79,8 @@ scale(1.05);
     background-color: #dcb55f;
 }
 
-.highlight{
-    background: linear-gradient(104def, transparent 0%, #E2856E 2%, #E2856E 98%, transparent 100%);
-    padding: 0 4px;
-    color: black;
-    border-radius: 3px;
-}
 
-.top-drip {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    z-index: 100;
-    pointer-events: none;
-    transform-origin: top;
-    animation: ooze 4s infinite alternate ease-in-out;
 
-    /* animation part */
-    transform-origin: top;
-    animation: ooze 4s infinite alternate ease-in-out;
-}
 
 /* Keyframing */
 @keyframes ooze {
@@ -253,5 +233,66 @@ a.sketch-button {
     height: 100vh;
     object-fit: cover; /* to fill screen */
     z-index: -2;
-    opacity: 0.4;
+    filter: brightness(0.8);
 }
+
+/* Drip header&navbar&logo&blalbla */
+/* --- FLOATING SKETCH NAVBAR --- */
+
+/* This fixes the text being pushed to the right by taking the header out of the flexbox flow */
+.drip-header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 20px 5%; /* Adds space around the floating bar */
+    box-sizing: border-box;
+}
+
+/* The sketchy pill background for the navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9F8F6; /* Matches your paper background */
+    border: 3px solid #2D2D2D; /* Charcoal border */
+    border-radius: 255px 15px 255px 15px / 15px 255px 15px 255px; /* Wobbly sketch effect */
+    padding: 10px 30px;
+    box-shadow: 4px 4px 0px rgba(45, 45, 45, 0.2); /* Slight shadow to make it float */
+}
+
+/* The circular logo container */
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #2D2D2D; /* Charcoal border to match */
+}
+
+.logo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* The Navigation Links */
+.nav-links a {
+    color: #2D2D2D; /* Charcoal text instead of white */
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: inline-block;
+}
+
+/* A slick hover effect that changes color to your coral highlight */
+.nav-links a:hover {
+    color: #E2856E; 
+    transform: translateY(-3px) scale(1.05); 
+}
+
+
+/* doing this so that i can push code ther had been some issure */
