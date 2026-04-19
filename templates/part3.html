@@ -12,7 +12,28 @@
 
 </head>
 <body>
+
+    <video autoplay loop muted playsinline class="bg-video">
+        <source src="{{ url_for('static', filename='images/mysticbg.mp4') }}" type="video/mp4">
+    </video>
+
     <div id="cursor-follower"></div>
+
+    <header class="drip-header">
+        <nav class="navbar">
+            <div class="logo-circle">
+                <img src="{{ url_for('static', filename='images/github-logo.png') }}" alt="My logo">
+            </div>
+            <div class="webtitle">
+                <h1>BE THE <span class="highlight">MYSTIC</span></h1>
+            </div>
+            <div class="nav-links">
+                <a href="{{ url_for('part1') }}">Part 1</a>
+                <a href="{{ url_for('part2') }}">Part 2</a>
+                <a href="{{ url_for('part3') }}">Part 3</a>
+            </div>
+        </nav>
+    </header>
 
     <main class="container">
         <section class="sketch-card article-card">
@@ -74,7 +95,7 @@
                  <img src="/static/images/grace.jpg" id="grace" alt="ice cream eater">
                 </div>      
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h1>How Much Sacrifice Will This Involve?</h1>
             <p>Normally people would thing of becoming a teacher or charity worker, so that they can
@@ -85,7 +106,7 @@
             </p>
             <h4>Moreover, as we saw earlier in the guide, once you start earning more than about $55,000 per year, extra income won’t affect your happiness that much — while acts that help others, like giving to charity, probably make you happier.</h4>
         </section>
-        
+        <br> 
         <section class="sketch-card article-card">
             <h1>How To Have A Bigger Impact Than Being A Doctor:</h1>
             <p>If you don’t want to be a doctor or want to be a doctor just because you want to save lives.
@@ -99,7 +120,7 @@
                 
             <h4>If everyone in the richest 10% of the world’s population donated 10% of their income, that would be $5 trillion per year. That would be enough to double scientific research funding, raise everyone in the world above the $2.15 per day poverty line, provide universal basic education, and still have plenty left to fund a renaissance in the arts, go to Mars, and then invest $1 trillion in mitigating climate change. None of this would be straightforward to achieve, but it at least illustrates the enormous potential of greater giving.</h4>    
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h1>How is this possible?</h1>
             <p>It’s astonishing that we can do so much good while sacrificing so little. How is this possible?
@@ -132,7 +153,7 @@
                 too. If you don’t want to take a Pledge but are sure you will donate that is fine too.
             </p>    
         </section>
-
+        <br>
         <section class="sketch-card article-card">
            <h1>2.What If You Don’t Want To Give Money?</h1>
            <p>Most people were lucky they were born in right country at right time due to which
@@ -152,7 +173,7 @@
                 <br>
                 So all you have to do is use all advantages you have in your life.</p>    
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h1>3. Being a “multiplier”</h1>
             <p>If none of the options avalible above works for you then just be a multiplier. Talk to
@@ -161,7 +182,7 @@
                 to do a lot good . So just socalize and talk how donating money and all this stuff is
                 good for everyone.</p>    
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h1>Conclusion: anyone can make a difference</h1>
             <p>So, good news: you don’t need to throw yourself out of a plane to do good. In fact, there are far easier (and safer) ways to have an impact that are much more effective.
@@ -181,7 +202,7 @@
                 What if you want to make a difference directly through your career? If you can achieve so much with just 10% of your income, then what you could achieve with your entire job over decades could be huge. That’s what we’ll cover in the next three articles.</p>
 
         </section>
-
+        <br>
         <section class="sketch-card article-card">
             <h1>THE END</h1>
             <p>Now it’s THE END, philosphy and guide. If you still don’t get what you have to
@@ -191,7 +212,7 @@
             <p>If you want to see this guide with more detailed version ,more with evidences and studies.
                 Then visit 80000 hour career guide.</p>    
         </section>
-
+        <br>
          <div class="nav-buttons">
                 <a href="{{ url_for('part1') }}" class="sketch-button nav-btn">&larr; PART 1</a>
                 <a href="{{ url_for('part2')}}" class="sketch-button nav-btn">&larr; Part 2</a>
