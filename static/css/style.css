@@ -23,13 +23,20 @@ a, button, .sketch-button {
 
 /* Wobbly border trick for the main card */
 .sketch-card {
-    background-color: white;
-    border: 3px solid #2D2D2D;
+    background-color: rgba(20, 20, 20, 0.5);
+    backdrop-filter: blur(3px);
+    border: 3px solid #dcb55f;
+    color: #F9F8F6;
     padding: 2rem;
     max-width: 600px;
     /* To make a hand drawn impression */
     border-radius: 255px 15px 255px 15px / 15px 255px 15px 255px;
-    margin-top: 2rem;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.sketch-card h2 {
+    color: #E2B14B;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
 /* Tilted button */
@@ -96,6 +103,10 @@ scale(1.05);
     margin-top: 150px;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 html {
@@ -255,11 +266,12 @@ a.sketch-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F9F8F6; /* Matches your paper background */
-    border: 3px solid #2D2D2D; /* Charcoal border */
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px); 
+    border: 3px solid #E2B14B; /* Charcoal border */
     border-radius: 255px 15px 255px 15px / 15px 255px 15px 255px; /* Wobbly sketch effect */
     padding: 10px 30px;
-    box-shadow: 4px 4px 0px rgba(45, 45, 45, 0.2); /* Slight shadow to make it float */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6); /* Slight shadow to make it float */
 }
 
 /* The circular logo container */
@@ -279,7 +291,7 @@ a.sketch-button {
 
 /* The Navigation Links */
 .nav-links a {
-    color: #2D2D2D; /* Charcoal text instead of white */
+    color: #dcb55f;
     font-weight: 700;
     text-decoration: none;
     margin-left: 2rem;
@@ -307,9 +319,10 @@ main header .margin-note {
 }
 
 .highlight {
-    background: linear-gradient(104deg, transparent 0%, #E2856E 2%, #E2856E 98%, transparent 100%);
+    background: linear-gradient(104deg, transparent 0%, #F9F8F6 2%, #E2B14B 98%, transparent 100%);
     padding: 0 8px;
     color: #2D2D2D;
     border-radius: 3px;
     text-shadow: none;
 }
+
