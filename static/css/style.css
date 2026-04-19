@@ -294,5 +294,22 @@ a.sketch-button {
     transform: translateY(-3px) scale(1.05); 
 }
 
+main header h1,
+main header p {
+    color:#F9F8F6
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9)
+}
 
-/* doing this so that i can push code ther had been some issure */
+main header .margin-note {
+    color: #E2B14B;
+    opacity: 1;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+
+.highlight {
+    background: linear-gradient(104deg, transparent 0%, #E2856E 2%, #E2856E 98%, transparent 100%);
+    padding: 0 8px;
+    color: #2D2D2D;
+    border-radius: 3px;
+    text-shadow: none;
+}
