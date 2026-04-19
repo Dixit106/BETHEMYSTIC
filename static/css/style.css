@@ -68,26 +68,6 @@ scale(1.05);
     text-align: left;
 }
 
-.color-blob {
-    position: fixed;
-    width: 40vw;
-    height: 40vw;
-    border-radius: 50%;
-    filter: blur(100px);
-    z-index: -1;
-    opacity: 0.5;
-}
-
-
-
-.blob-right {
-    bottom: -10%;
-    right: -10%;
-    background-color: #dcb55f;
-}
-
-
-
 
 /* Keyframing */
 @keyframes ooze {
@@ -277,7 +257,7 @@ a.sketch-button {
     backdrop-filter: blur(3px); 
     border: 3px solid #E2B14B; /* Charcoal border */
     border-radius: 255px 15px 255px 15px / 15px 255px 15px 255px; /* Wobbly sketch effect */
-    padding: 10px 30px;
+    padding: 1px 30px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6); /* Slight shadow to make it float */
 }
 
@@ -331,5 +311,13 @@ main header .margin-note {
     color: #2D2D2D;
     border-radius: 3px;
     text-shadow: none;
+}
+
+.webtitle {
+    color: #F9F8F6;
+    font-size: 1.0rem;
+    margin: 0;
+    font-weight: bold;
+
 }
 

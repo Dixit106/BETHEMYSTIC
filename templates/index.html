@@ -22,6 +22,9 @@
     <div class="logo-circle">
         <img src="{{ url_for('static', filename='images/github-logo.png') }}" alt="My logo">
     </div>
+    <div class="webtitle">
+    <h1>BE THE <span class="highlight">MYSTIC</span></h1>
+    </div>
     <div class="nav-links">
         <a href="{{ url_for('part1') }}">Part 1</a>
         <a href="{{ url_for('part2') }}">Part 2</a>
@@ -46,20 +49,32 @@
         </section>
 
         <header>
-            <h1>BE THE <span class="highlight">MYSTIC</span></h1>
             <p>Be-The-Mystic is a guide which is inspired by 80000 hour career guide.
             This guide shows results of different stuides which were done in past 3 decades.
             Also you will understand why organizations like Hackclub are more important than big corps like Meta.</p>
             <p class="margin-note">Is earning a lot of Money really the goal? Perhaps Or Perhaps Not? Read the guide and you will have better idea than you have now.</p>
         </header>
+        <br>
+
+
+          <section class="sketch-card">
+            <h3>I have a IMPORTANT message for you. It's from your future self...probably or it might be from a random guy idk.</h3>
+            <details class="mystic-reveal">
+                <summary>Click here to reveal the message. . .</summary>
+                <h1>STAY!</h1>
+            </details>
+
+        </section>
+        <br>
+        <br>
 
         <section class="sketch-card">
             <h2>Your Journey Starts Here</h2>
 
             <p>Most carrer guide ask what passions what hobbies do you have.Is that right perhaps is that wrong perhaps</p>
             <a href="{{ url_for('part1') }}" class="sketch-button" style="text-decoration: none; display: inline-block;">Begin</a>
-
-       
+        </section>
+  
         
     </main>
     
