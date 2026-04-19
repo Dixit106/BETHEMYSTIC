@@ -235,6 +235,13 @@ a.sketch-button {
     margin-right: auto;
 }
 
+#homeicecream {
+    width: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Fullscreen background video */
 .bg-video {
     position: fixed;
@@ -308,7 +315,7 @@ a.sketch-button {
 
 main header h1,
 main header p {
-    color:#F9F8F6
+    color:#F9F8F6;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9)
 }
 
